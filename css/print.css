@@ -1,0 +1,14 @@
+body{font-size:12pt;}
+#nav,#hbg,#menu,.pagelist,.noprint,.hid,.item div strong,form,.filterbox,.lowpricebox{display:none;}
+.content table{width:100%;}
+table,th,td{border-collapse:collapse; border:1pt solid black;}
+th,td{padding:0 4px;}
+a img{border:0;}
+.shop-hp h3,.item h3{margin-top:0;}
+.shop-hp div,.item{padding:5pt; margin:5pt 0; border:0.1pt solid gray;}
+.item{height:115pt;}
+#katalog2 .item{height:125pt;}
+.shop-hp div img{float:right;}
+#katalog .item div,#katalog2 .item div div{float:left; width:111pt; margin-right:10pt;}
+.cl,.item{clear:both;}
+div.cl,div.clr,.shop-hp div.cl{clear:both; padding:0; margin:0; height:1px; border:none;}

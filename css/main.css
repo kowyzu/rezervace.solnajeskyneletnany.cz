@@ -1,0 +1,383 @@
+@media screen,projection{
+body{font:80% Arial,Verdana,lucida,sans-serif; text-align:center; line-height:1.4em; margin:0; padding:0; color:black; background:white url(../img/2008-09-22/bg-body-head.jpg) 50% 0 repeat-x;}
+/*body{background:url(../img/2008-09-22/bg-pracovni.png) 50% 0 no-repeat;}*/
+/* logo */
+h1,h1 span{font-size:160%; top:0; left:0; width:418px; height:108px; padding:0; margin:0;}
+	h1{position:relative; top:13px; left:0px; overflow:hidden;}
+	h1 span{display:block; position:absolute; background:transparent url(../img/2008-09-22/logo.jpg) 0 0 no-repeat;}
+
+/* headers */
+h2,h3,h4{font-size:190%; font-weight:bold; margin:1em 0; line-height:1.1em}
+	h3{font-size:160%;}
+	h4{font-size:140%;font-weight: bold;}
+
+/* tags */
+hr{height:1px; border:none; border-bottom:1px solid #e5e5e5;}
+ol{padding:0 0 0 1.7em}
+
+/* colors */
+.blue,a{color:#2161B9;}
+.red{color:red;}
+.green,a:hover{color:#BF0015;}
+
+.bl{color:black;}
+.wh{color:white;}
+#contact a{color:white} 
+#contact a:hover,#contact a:focus{color:#BF0015;}
+
+/* main */
+#main{}
+.matrj{position:relative; top:0; left:0; text-align:left; margin:0 auto; width:980px;}
+#head {height:180px;background: url(../img/2008-09-22/bg-head.jpg) no-repeat center 0 }
+#head  .matrj{height:140px;}	
+  #lang{position:absolute; top:10px; left:500px;}
+	#contact{position:absolute; top:16px; left:776px; width:215px; padding:0;color:white;font-size:100%;line-height:1.4em;}
+	#contact p{margin:0;}
+	#contact strong{display:block;padding-top:10px;}
+  #search{position:absolute; top:10px; right:10px; padding:0; text-align:right;}
+#crumbs{}
+	#crumbs .matrj{padding:12px 0 10px 0; background:white; background: url(../img/2008-09-22/bg-crumbs.gif) repeat-x left bottom;color:#828282}
+	#crumbs p{margin:0; padding:0 10px;}
+#cont{position:relative; top:0; left:0; padding:0; margin:0;}
+	#cont .matrj{/* background:white; */}
+#homepage,#left-clmn,#right-clmn,#right-clmn2{float:left;margin-top:1em;}
+  a.more{background: url(../img/2008-09-22/bg-a-sipka.gif) no-repeat center right;padding:0 26px 0 0}
+  #homepage .clmn1{width:450px;background: url(../img/2008-09-22/v-cara-teckovana.gif) repeat-y right top;margin:7px 0 0 0;padding-right:5px;min-height:200px}
+  #homepage .clmn1 h2{margin:0 0 15px;color:#222D80}
+  #homepage .clmn2{width:199px;background: url(../img/2008-09-22/v-cara-teckovana.gif) repeat-y right top;margin:7px 0 0 0;padding:0 5px 0 18px;min-height:200px}
+  #homepage .clmn2 h3{margin:0 0 10px;color:#7D3381}
+  #homepage .clmn2 h4{margin:0 0 10px;color:#7D3381}
+  #homepage .clmn2 p{margin:.8em 0}
+  #homepage .clmn3{width:199px;margin:7px 0 0 0;padding:0 5px 0 17px;min-height:200px}
+
+#left-clmn{width:690px;padding:0 17px 0 0;margin:0}
+  .perex{border-left:3px solid #dbb3dd;padding:13px 17px 13px 19px;margin:0 0 23px 1px;background:#f9effa;}  
+  #left-clmn h2{color:#222d80;margin:20px 0 15px 0}
+  #left-clmn h3{color:#7d3381;font-size:170%;margin:10px 0 18px}
+
+.comment-add table tr th{text-align:right}
+.comment-add table tr td{text-align:left}
+.comment{border:1px solid  #F4FAFF;border-top:1px solid #CFE6FF; background: repeat-x 0 0; padding:5px 10px; margin-bottom:10px}
+.comment p{margin:.5em 0}
+
+.error-msg{border:none;border:2px solid #C13D37; background:#EFD2D1; margin-bottom:1em}
+.ok-msg{border:none;border:2px solid #58C137; background:#D5EFD1; margin-bottom:1em; padding:.5em}
+
+#blue-box{background:#F7FAFD url(../img/2008-09-22/bg-blue-box.gif) repeat-x 0 0;margin-top:20px;padding:8px 0 0 0}
+  #blue-box .clmn1{width:326px;background: url(../img/2008-09-22/v-cara-teckovana.gif) repeat-y right top;padding:0 20px;margin:15px 0;min-height:270px}
+  #blue-box .clmn1 h2{margin:0 0 10px 0;color:#222D80;font-size:140%}
+  #blue-box .clmn1 a img.border {margin-right:10px;background:red}
+
+  #blue-box .clmn1 .popis h3{font-size:125%;}
+  .cena{color:#C76BCC;font-weight: bold;font-size:135%}
+  #blue-box .clmn1 .popis p{margin:.2em 0;line-height: 1.25em;}
+  
+  #blue-box .clmn2{width:275px;background: url(../img/2008-09-22/v-cara-teckovana.gif) repeat-y right top;padding:0 18px;margin:15px 0;min-height:270px}
+  #blue-box .clmn2 h2{margin:0;color:#222D80;font-size:140%}
+  #blue-box .clmn3{width:265px;padding:0 18px;min-height:270px;background: url(../img/2008-09-22/v-cara-teckovana.gif) repeat-y left top;margin:15px 0 0 -1px;}
+  #blue-box .clmn3 h2{margin:0;color:#222D80;font-size:140%}
+  #blue-box .clmn3 ul{margin:0;padding:0}
+  #blue-box .clmn3 li{list-style: none;margin:15px 0;padding:0}
+  #blue-box .clmn3 li p{margin:.5em 0;line-height: 1.25em;}
+
+#right-clmn{float:right; width:253px;background: url(../img/2008-09-22/v-cara-teckovana.gif) repeat-y 0 0;padding-left:1px;}
+#right-clmn .mtrj{background:#e3edf8 url(../img/2008-09-22/bg-right-clmn-mtrj.gif) repeat-x 0 0;margin:0;width:217px;padding:0px 18px .5em 18px }
+#right-clmn .clmn{background: url(../img/2008-09-22/border-right-clmn-h.gif) repeat-x left bottom;padding:.5em 0}
+#right-clmn .clmn .item{background:#FFFFFF none repeat scroll 0 0;height:150px;padding:12px;position:relative;text-align:center;width:150px;}
+#right-clmn .clmnlast{padding:.5em 0}
+#right-clmn h2{color:#222d80;font-size:140%;margin:.3em 0 .3em 0}
+#right-clmn h3 a{font-size:80%;line-height:1.2em;margin:0 0 .5em 0;display:block}
+#right-clmn h2 a{line-height:1.2em;}
+#right-clmn h3, #right-clmn h4{color:#7d3381;margin:0}
+
+#right-clmn .popis .cena{margin:.5em 0 0 0}
+
+#right-clmn ul{margin:0;padding:0}
+#right-clmn ul li{list-style:none}
+
+#right-clmn2{float:right;} /* right side for vertical version navigation */
+#middle-left-clmn{float:left; width:55%;}
+#middle-right-clmn{float:right; width:42%;}
+#foot{margin-top:20px;}
+	#foot .matrj{padding-bottom:1em; border-top:1px solid #e5e5e5;}
+	#foot p{float:left; padding:0 2%; margin:1em 0 0;}
+	#foot p.author{float:right;}
+
+#kosik{background: url(../img/2008-09-22/bg-kosik.gif) no-repeat 0 0;height:74px;width:173px;position:absolute;right:0}
+#kosik .mtrj{position:relative;}
+#kosik .mtrj a{position:absolute;padding:16px 0 0 70px;display:block;height:74px;width:103px;}
+#kosik .mtrj strong{position:absolute;top:36px; left:70px}
+
+
+/* FILTERBOX */
+.filterbox,.cathegorybox,.lowpricebox{width:665px}
+.filterbox,.cathegorybox,.lowpricebox,.pagelist,.info,.comment div{padding:1em; margin:0 0 2em; background:#E3EDF8; border:1px solid #99BCDF;}
+.filterbox,.cathegorybox,.lowpricebox,.pagelist,.info{border-right:none; border-left:none;}
+.lowpricebox{background:#BFDEFF;}
+.pagelist{margin:1em 0 2em;}
+.filterbox,.cathegorybox,.lowpricebox{margin:-1px 0 0;}
+.filterbox h3{margin:0;}
+.filterbox ul,.cathegorybox ul,.lowpricebox ul{display:inline; padding:0; margin:0; list-style-type:none;}
+#row .filterbox li,#row .cathegorybox li,#row .lowpricebox li{display:inline; padding:0; margin:0; list-style-image:none;}
+
+.filterbox a,.cathegorybox a,.lowpricebox a{padding:2px; margin:0 1px 0 0;}
+.info{padding:5px;}
+.error,.comment .error{color:#000; background:#fff; border:1px solid #000; border-bottom-width:3px;}
+.filterbox .no-item,.cathegorybox .no-item,.lowpricebox .no-item{color:#6495be;}
+
+/* CATALOG */
+/* #katalog,#katalog2{width:100%;}*/
+#katalog div.item,#katalog2 div.item{float:left; position:relative;}
+#katalog div.item,.itemdetail{width:174px; height:325px; padding:10px 20px 0; margin:0 0.5em 1em;overflow: hidden;}
+#katalog div.item,#katalog2 div div,.itemdetail{background:#e3edf8; border:1px solid #AFD5FF; border-bottom-width:3px;}
+#katalog div.item:hover,#katalog2 div div:hover,.photogallery div:hover{background:#e3edf8; /*border-color:#000*/;}
+#katalog2 div div div:hover{background:#fff; border:none;}
+#katalog2 div.item{width:50%;}
+#katalog .item .big strong{margin-top:4px}
+#katalog div div,#katalog2 div div div,.itemdetail div{position:relative; text-align:center; width:150px; height:150px; padding:12px; background:#fff;}
+#katalog .inputs{background:none;height:1em}
+	#katalog div div.addcart,
+	.itemdetail .addcart{position:absolute; bottom:0px; left:0; width:214px; height:28px; padding:0; text-align:left; background:#BFDEFF/*e3edf8,122b41*/;}
+	#katalog div div.addcart strong{left:0; width:160px; background:none;}
+	.itemdetail .addcart{height:auto;}
+	.itemdetail .addcart p{margin:5px 10px;}
+  
+	.addcart input{position:absolute; top:2px; right:-30px;}
+	.addcart input#add{position:absolute; top:7px; right:10px;}
+#katalog div div strong,#katalog2 div div div strong{position:absolute; top:0; right:0; padding:3px 10px; background:#7d3381;}
+#katalog div .sleva{color:white}
+#katalog2 div div{padding:10px; margin:0 0.5em 1em;}
+#katalog2 div div div.cl{float:none; width:0; height:0; padding:0; margin:0; border:none;}
+#katalog2 div div div{float:left; margin:0 1em 1em 0; border:none;}
+#katalog div p{margin:5px 0 0;}
+#katalog div a img,#katalog2 div a img,.itemdetail a img{border:none;}
+#katalog h3,#katalog2 h3{font-size:110%; margin:8px 0;}
+#katalog2 h3{margin:0;}
+.itemdetail .addcart{width:215px}
+#left-clmn .itempopis h3,
+#left-clmn .itemdetail h3{font-size:120%;}
+#left-clmn .novinka{background: url(../img/2008-09-22/bg-crumbs.gif) repeat-x left bottom;padding:.5em 0}
+#left-clmn .novinka h3{font-size:130%}
+
+.itemdetail{position:relative; float:left; width:175px; height:auto; padding-bottom:40px;}
+.itemdetail del{color:#5c5c5c}
+.itemdetail .cena{font-size:110%}
+.itempopis{margin-left:245px;}
+.itemdetail a.zoom{padding:2px 0 2px 20px; background:url(../img/2008-09-22/lupa.gif) 0 50% no-repeat;}
+.itemdetail div.sleva{font-size:120%; font-weight:bold; height:auto; padding:5px 12px; background:#7d3381;color:white;/*ff6900*/;}
+.itemdetail h3{margin-top:0;}
+.itempopis h3{padding-top:13px;}
+
+
+/* nav horizont version */
+#nav{margin:0 auto;width:980px}
+	#nav .mtrj{}
+	#nav .cl{}
+	#nav ul{list-style-type:none; margin:0; padding:0;}
+	#nav li{float:left;margin-right:3px;font-size:110%}
+  #nav a{color:white}
+	#nav a,#nav strong{display:block;padding:12px 12px 12px;}
+	#nav .active,#nav a:hover{background: url(../img/2008-09-22/bg-nav-left.gif) no-repeat 0 0;position:relative;color:black}
+	#nav .active span,#nav a:hover span{background: url(../img/2008-09-22/bg-nav-right.gif) no-repeat 0 0;display:block;width:3px;height:40px;position:absolute;right:0;top:0}
+	#nav a.active,#nav a.active:hover{}
+
+
+#subnav{position:relative; top:0;}
+	#subnav .matrj{background:#c6e0ea;}
+	#subnav .cl{}
+	#subnav ul{list-style-type:none; margin:0; padding:0;}
+	#subnav li{float:left;}
+	#subnav a, #subnav strong{display:block; padding:5px 10px;}
+	#subnav strong{background:#B3DFEF}
+	#subnav a:hover{background:#D1E7EF}
+	#subnav a.active,#subnav a.active:hover{}
+
+/* nav vertical version */
+#cont #nav{float:left; width:34%; background:#e5f9fe;}
+	#cont #nav li{float:none;}
+	#cont #nav li li{margin-left:10px;}
+	#cont #nav a{/*background:#cfffa5;*/ border-bottom:1px solid white;}
+
+/* news and magazine - stylesheet can be separate */
+/* news + image left */
+.news,.magazine{}
+	.news div,.news-detail div,.magazine div,.magazine-detail div{clear:left; margin-top:1em;}
+	.news div,.news-detail div.perex,.magazine div,.magazine-detail div.perex{clear:none; margin:0;}
+	.news-detail div.perex,.magazine-detail div.perex{padding:10px ; background:#e5f9fe;}
+	.news span,.news-detail span,.magazine span,.magazine-detail span{float:left; font-size:80%; padding:3px 10px; margin-right:5px; color:white; background:#639c00;}
+	.news img,.news-detail img,.magazine img,.magazine-detail img{float:left; margin:0 10px 10px 0;}
+
+/* news + image right 
+.news,.magazine{}
+	.news div,.news-detail div,.magazine div,.magazine-detail div{clear:right; margin-top:1em;}
+	.news div,.news-detail div.perex,.magazine div,.magazine-detail div.perex{clear:none; margin:0;}
+	.news-detail div.perex,.magazine-detail div.perex{padding:10px ; background:#e5f9fe;}
+	.news span,.news-detail span,.magazine span,.magazine-detail span{float:left; font-size:80%; padding:3px 10px; margin-right:5px; color:white; background:#639c00;}
+	.news img,.news-detail img,.magazine img,.magazine-detail img{float:right; margin:0 0 10px 10px;}*/
+
+
+/* stromova struktura - katalog */
+
+#katalog-struktura{font-size:90%; width:188px; padding:10px 10px 15px; border:1px solid #d9d9d9; border-bottom-width:4px;float:left;margin:0 1em 0 0}
+	#katalog-struktura h3{font-size:120%; font-weight:bold; margin:0 0 5px;}
+	#katalog-struktura ul{margin:0; padding:0; list-style-type:none;}
+		#katalog-struktura ul ul{margin-left:-2px;}
+	#katalog-struktura li{padding:2px 0 2px 18px; background:url(https://rezervace.solnajeskyneletnany.cz/img/bg-filesystem.gif) 5px 0 no-repeat;}
+	#katalog-struktura li.last{background-image:url(https://rezervace.solnajeskyneletnany.cz/img/bg-filesystem-last.gif)}
+	#katalog-struktura .active,#katalog-struktura .selected{background-image:url(https://rezervace.solnajeskyneletnany.cz/img/bg-filesystem-active.gif);}
+	#katalog-struktura .active-last,#katalog-struktura .selected-last{background-image:url(https://rezervace.solnajeskyneletnany.cz/img/bg-filesystem-active-last.gif);}
+	#katalog-struktura .active a,#katalog-struktura .selected a{color:#578508; font-weight:bold;}
+	#katalog-struktura .selected a{text-decoration:underline;}
+	#katalog-struktura .active a,#katalog-struktura .active a:hover{color:black; text-decoration:none;}
+	.folder{display:block; padding:2px 0 2px 18px; background:url(https://rezervace.solnajeskyneletnany.cz/img/folder.gif) 0 50% no-repeat;}
+	/* rusi obarveni active i selected */
+	#katalog-struktura .normal{background-image:url(https://rezervace.solnajeskyneletnany.cz/img/bg-filesystem.gif)}
+	#katalog-struktura .normal a{color:#0666d3; font-weight:normal; text-decoration:underline;}
+	#katalog-struktura a:hover,#katalog-struktura .normal a:hover{color:red;}
+	
+
+/* discussion */
+#discussion{margin-bottom:1em;}
+	#discussion div{padding:0; margin:10px 0; border:1px solid gray;}
+	#discussion div div{margin:0; background:#e5e5e5; border:none;}
+	#discussion div div,#discussion div p{padding:5px 10px;}
+	#discussion h3{font-size:100%; padding:0; margin:0; background:none;}
+	#discussion p{margin:0;}
+	#discussion .re-story{border-color:#0079ab;}
+	#discussion .re-story div{background:#e5f9fe;}
+	#discussion .admin-story{border-color:#abd168;}
+	#discussion .admin-story div{background:#eff9d5;}
+
+/* calendar */
+#calendar table{vertical-align:middle; text-align:center;}
+  #calendar th{background:gray; color:white;}
+  #calendar th a,#calendar td a{color:white;}
+.mesic td{background:gray; color:white;}
+.cell_active,.cell_active_today{background:red;}
+.cell_active_today{font-weight:bold;}
+.cell_inactive_today{font-weight:bold; background:red;}
+
+/* photogallery */
+.photogallery{}
+	.photo{float:left; position:relative; text-align:center; width:160px; height:160px; padding:10px; margin:0 10px 10px 0; border:1px solid gray; overflow:hidden;}
+	.photo div div{display:table-cell; vertical-align:middle; width:160px; height:160px;}
+	.photo a.text-foto{position:absolute; left:0; bottom:0; width:160px; padding:3px 10px; text-align:center; background:white;}
+
+/* warning */
+.warning{width:100%;}
+	.warning div{clear:left; color:white; padding:15px 15px 15px 80px; margin:1em 0 1.5em; background:#c90032 url(https://rezervace.solnajeskyneletnany.cz/img/bg-warning.png) 0 50% repeat-x; border:1px solid #850021; border-bottom-width:5px;}
+  .warning ul{padding:0; margin:0 0 0 40px;}
+	
+/* list*/
+.list{width:100%; margin-bottom:10px; border:none;}
+	.list td{font-size:90%; background:#e5f9fe; border:none}
+	.list form,.list form div{display:inline;}
+
+/* tabs */
+table{font-size:100%; width:100%; border-collapse:collapse; border:1px solid black;text-align:center;}
+th,td{padding:3px 6px; background:white; border:1px solid gray;}
+th{background:#9FCDFF;}
+td.free{background:white;font-weight: bold;}
+td.full{background:#DFD1DF}
+td.deti{background:#F6EE71}
+td.bez-deti{background:#D1EBF8}
+
+td.bez-deti:hover{background:#D7EFB3}
+td.deti:hover{background:#D7EFB3}
+td.free:hover{background:#D7EFB3}
+td.full:hover{background:#DFD1DF}
+td a{display:block;}
+
+td.full strong{color:red}
+form table{width:auto;}
+form table,form th,form td{border:none; background:none;}
+
+.legenda span{color:#2161B9; text-decoration:underline}
+.legenda{width:100%;font-size:90%}
+
+.rezervace td{padding:0}
+.rezervace td a{padding:0;padding:3px 6px;}
+
+.order_content{border-collapse: separate;width:690px}
+.order_content th{background:#1C287A;color:white}
+.order_content td{background:#DFE3FF;color:black}
+.order_content tr.sep td{background:#BFC7FF;color:black}
+.order_content td a{color:#2161B9}
+.order_content td a:hover{color:#BF0015}
+
+.doruceni{background:#DFE3FF;padding:.3em 1em}
+
+.p1 p{margin-top:10px}
+/* forms */
+form{margin:0;}
+form p{margin:0;}
+input,textarea,select,submit{font:100% Arial,Verdana,lucida,sans-serif;}
+textarea {width:99%}
+fieldset,.hledej{padding:10px 20px; margin-bottom:10px; background:#DFF4FF; border:1px solid #9FDDFF;}
+legend{padding:5px 10px; margin-top:10px; background:#9FDDFF; border:1px solid #9FDDFF;}
+
+#search fieldset,#search legend{padding:0; margin:0; background:none; border:none;}
+
+
+
+.fotogalerie a{display:block;border:1px solid #8F9DFF; background:#DFE3FF;padding:10px;margin-right:5px;margin-bottom:5px;text-decoration:none;height:120px;width:100px;text-align:center}
+.fotogalerie a span{text-decoration: underline;text-align:center;display:block}
+.fotogalerie a:hover{border-color:#BF0015;background:#EFE0E2}
+/* searching text */
+.search{background:#ffff00; font-weight:bold;}
+
+/* other */
+.vis{visibility:hidden;}
+.hid{display:none;}
+.photo a.text-foto{font-size:90%;}
+.sml{font-size:80%}
+.big{font-size:120%;}
+a img{border:none;}
+.c{text-align:center;}
+.l{text-align:left;}
+.r{text-align:right;}
+.just{text-align:justify;}
+img.fl, .flimg{margin:0 18px .3em 0;float:left;}
+img.flr, .flrimg{margin:0 0 .3em 1em;float:right;}
+.fl{float:left;}
+.flr{float:right;}
+.cl{clear:both;}
+.cll{clear:left;}
+.clr{clear:right;}
+div.cl{font-size:1px; height:1px; padding:0; margin:0; overflow:hidden;}
+.w50{width:50%;}
+.w40{width:40%;}
+.w30{width:30%;}
+.border{border:1px solid #CBCDCF}	
+.borderf{border:1px solid #d2b4d4}
+	
+	.score{background:#C2D8EF;color:black;margin:0;padding:0;border-bottom:1px solid #90BDEE; font-size:90%}
+.hodnoceni{font-size:90%;margin:0;padding:0;width:100%;background:#C2D8EF;position:absolute;bottom:0;}
+.testbig div div a img{border:3px solid #FFAC7F}
+.testbig div div a:visited img{border:3px solid #DFDFDF}
+.testbig div div a:hover img{border:3px solid #FF5A00}
+
+
+.testbig{float:left;position:relative;text-align:center;width:208px;height:205px;padding:0;margin:0 10px 10px 0;background:#e1f5fb;border:1px solid #90bdee;overflow:hidden;}
+.testbig div{display:table-cell;vertical-align:middle;width:205px;height:135px;}
+.three{margin:0 0 10px 0;}
+
+.filtr{background:#edf5fb; border:1px solid #b2d4ec;padding:6px 10px 0;}
+
+.list{padding:6px 10px; margin-bottom:10px; background:#edf5fb; border:1px solid #b2d4ec;}
+	.list td{width:auto;}
+  .list tr:hover{background:none;}
+	.list tr:hover td,.list tr:hover td a{color:black;}
+	.list td,.list tr:hover td{border:none;}
+
+.number span,.number a{display:block; float:left; padding:3px 0; margin-right:6px;}
+.number a{width:22px; margin-right:1px; text-align:center; background:white; border:1px solid white;}
+.number a.activelist{text-decoration:none; color:black; border-color:#76b3dd;}
+.w20{width:20%;}
+.w40{width:40%;}
+.w50{width:50%;}
+.right{text-align:right}
+.pnmn{padding:0;margin:0}
+.offset{padding-bottom:1em}
+}
+
