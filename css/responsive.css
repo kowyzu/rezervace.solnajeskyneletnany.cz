@@ -1,8 +1,9 @@
 /* responsive.css
-   Desktop unchanged. Mobile/tablet: fix #contact overflow, keep header background as-is.
+   Desktop stays exactly as in main.css.
+   This file only adds responsive behavior on smaller screens.
 */
 
-/* ---------- Tablet / small laptop ---------- */
+/* -------------------- Tablet / small laptop -------------------- */
 @media (max-width: 1200px) {
   .matrj {
     max-width: 980px;
@@ -11,7 +12,6 @@
     padding-inline: 16px;
   }
 
-  /* Allow nav to wrap */
   #nav ul {
     display: flex !important;
     flex-wrap: wrap;
@@ -21,9 +21,8 @@
     margin: 0;
   }
   #nav li { float: none !important; margin: 0 !important; }
-  #nav a { display: block; padding: 10px 14px; border-radius: 4px; }
+  #nav a  { display: block; padding: 10px 14px; border-radius: 4px; }
 
-  /* Make the reservation table scroll if needed, remove outer border */
   table.rezervace {
     display: block;
     width: 100%;
@@ -36,53 +35,67 @@
   table.rezervace td { white-space: nowrap; }
 }
 
-/* ---------- Phones (stacked layout + header fixes) ---------- */
+/* -------------------- Phones: two-column header (logo | contact), nav below -------------------- */
 @media (max-width: 980px) {
-  /* Header uses grid, but **background stays as defined in your main CSS** */
   #head {
     display: grid;
     grid-template-areas:
-      "logo"
-      "contact"
-      "nav";
-    grid-template-columns: 1fr;
+      "logo contact"
+      "nav  nav";
+    grid-template-columns: 1fr minmax(45%, 1fr);
+    column-gap: 12px;
     row-gap: 10px;
-    align-items: start;   /* let content grow naturally */
-    text-align: center;
+    align-items: start;
     margin-bottom: 12px;
-
-    /* Critical spill fix: remove fixed header height */
     height: auto !important;
     min-height: 0 !important;
-    padding-bottom: 12px; /* add breathing room under contact */
+    padding-bottom: 8px;
   }
 
-  /* Header inner wrapper also had a fixed height; let it grow */
   #head > .matrj {
     display: contents;
     height: auto !important;
     min-height: 0 !important;
   }
 
-  /* Contact: stop absolute layout; wrap long lines */
+  #head h1 { grid-area: logo; margin: 0; align-self: start; }
+  #nav     { grid-area: nav;  width: 100% !important; }
+
+  /* #contact formatted as vertical list */
   #contact {
     grid-area: contact;
-    position: static !important;      /* no absolute positioning on mobile */
+    position: static !important;
+    justify-self: end;
+    align-self: center;
+    text-align: left;
     width: 100% !important;
-    max-width: 680px;                 /* readable line length */
-    margin: 0 auto;
-    text-align: center;
+    max-width: 520px;
+    font-size: 13px;
     line-height: 1.4;
-    overflow-wrap: anywhere;          /* break long words/addresses if needed */
+    white-space: normal !important;
     word-break: break-word;
-    white-space: normal !important;   /* ensure wrapping even if legacy CSS sets otherwise */
+    overflow-wrap: anywhere;
+    margin: 0;
   }
 
-  /* Logo (h1) & nav stay on their own rows */
-  #head h1 { grid-area: logo; margin: 0; }
-  #nav     { grid-area: nav; width: 100% !important; }
+  /* Convert to list-like layout */
+  #contact br { display: block !important; }
+  #contact strong { display: none !important; } /* hide multiline hours block */
 
-  /* Content stacks */
+  /* Add spacing between items */
+  #contact span,
+  #contact a,
+  #contact p {
+    display: block;
+    text-align: right;
+    margin-bottom: 2px;
+  }
+
+  /* Optional visual tweaks */
+  #contact a { text-decoration: none; }
+  #contact a:hover { text-decoration: underline; }
+
+  /* Page content stack */
   #cont {
     display: grid;
     grid-template-areas:
@@ -94,39 +107,34 @@
   }
   #cont > .matrj { display: contents; }
 
-  #crumbs    { grid-area: crumbs; }
-  #left-clmn { grid-area: left;  float: none !important; width: auto !important; }
-  #right-clmn{
-    grid-area: right;
-    float: none !important;
-    width: auto !important;
-    padding-top: 16px !important;   /* extra spacing when stacked */
-  }
+  #crumbs     { grid-area: crumbs; }
+  #left-clmn  { grid-area: left;  float: none !important; width: auto !important; }
+  #right-clmn { grid-area: right; float: none !important; width: auto !important;
+                padding-top: 16px !important; }
 
-  /* Remove decorative vertical backgrounds when stacked */
   #homepage .clmn1, #homepage .clmn2, #homepage .clmn3,
   #blue-box .clmn1, #blue-box .clmn2, #blue-box .clmn3,
   #right-clmn { background: none !important; }
 
-  /* Table readability */
   .rezervace { overflow-x: auto; border: 0 !important; background: transparent !important; }
   .rezervace th, .rezervace td { font-size: 13px; padding: 6px; }
 
-  /* Footer center alignment */
   #foot p { float: none !important; text-align: center; }
 
-  /* Slight text scale down on phones */
   body { font-size: 90%; }
   h1   { font-size: 140% !important; }
   h2   { font-size: 120% !important; }
 }
 
-/* ---------- Small phones ---------- */
+/* -------------------- Small phones -------------------- */
 @media (max-width: 768px) {
+  #head { grid-template-columns: 1fr minmax(48%, 1fr); }
   #nav a { padding: 8px 10px; }
 }
 
-/* ---------- Very small phones ---------- */
+/* -------------------- Very small phones -------------------- */
 @media (max-width: 480px) {
+  #head { grid-template-columns: 1fr minmax(52%, 1fr); }
+  #contact { font-size: 12px; }
   .rezervace th, .rezervace td { font-size: 12px; }
 }
