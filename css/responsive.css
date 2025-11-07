@@ -5,12 +5,30 @@
 
 /* -------------------- Tablet / small laptop -------------------- */
 @media (max-width: 1200px) {
+  /* delete image bg-body-head.jpg line bellow the #head  */
+
+  body,
+  #body,
+  #body-head {
+    background-image: none !important;
+  }
+
+  #head {
+    padding: 0 !important;
+  }
+
+  .cl {
+    display: none;
+  }
+
   .matrj {
     max-width: 980px;
     width: min(100%, 980px) !important;
     margin: 0 auto !important;
-    padding-inline: 16px;
+    padding: 0 !important;
   }
+
+  /* .matrj {padding-top: 60px !important;} */
 
   #nav ul {
     display: flex !important;
@@ -46,7 +64,7 @@
     column-gap: 12px;
     row-gap: 10px;
     align-items: start;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     height: auto !important;
     min-height: 0 !important;
     padding-bottom: 8px;
@@ -138,3 +156,4 @@
   #contact { font-size: 12px; }
   .rezervace th, .rezervace td { font-size: 12px; }
 }
+
