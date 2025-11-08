@@ -1,12 +1,8 @@
-/* responsive.css
-   Desktop stays exactly as in main.css.
-   This file only adds responsive behavior on smaller screens.
-*/
+/* -------------------------- */
+/* Bigger screens 1000px???? */
+/* -------------------------*/
 
-/* -------------------- Tablet / small laptop -------------------- */
 @media (max-width: 1000px) {
-  /* delete image bg-body-head.jpg line bellow the #head  */
-
   body,
   #body,
   #body-head {
@@ -16,113 +12,6 @@
 
   #head {
     padding: 0 !important;
-    /* background: url(../img/2008-09-22/logo.jpg) no-repeat left top !important; */
-    background-size: contain !important;   
-    background-color: #001b5f;            
-    /* height: auto !important; */
-    /* min-height: 0 !important; */
-    aspect-ratio: 3 / 2;     
-  }
-
-  .cl {
-    display: none;
-  }
-
-  .matrj {
-    max-width: 980px;
-    width: min(100%, 980px) !important;
-    margin: 0 auto !important;
-    padding: 10px 0 !important;
-  }
-
-  .matrj h1 strong {
-    display: none;
-  }
-
-  /* .matrj {padding-top: 60px !important;} */
-
-  #nav li:has(> a.active) { margin-top: 0 !important; }
-  #nav li > a.active      { transform: none !important; }
-
-  #nav ul {
-    display: flex !important;
-    flex-wrap: wrap;
-    gap: 6px;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-  #nav li { float: none !important; margin: 0 !important; }
-  #nav a  { 
-    display: block; 
-    padding: 10px 14px; 
-    border-radius: 4px;
-    padding: 5px 14px !important;
-    position: static !important;
-    background: white !important;
-    line-height: normal !important;
-  }
-
-  #nav a span {
-    display: none !important;
-  }
-
-  table.rezervace {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    border: 0 !important;
-    border-collapse: separate !important;
-    background: transparent !important;
-  }
-  table.rezervace th,
-  table.rezervace td { white-space: nowrap; }
-
-    #foot p {font-size: 100%;}
-  #foot p.fl {font-size: 200%; margin-bottom: 20px !important;}
-  #foot .matrj {
-    padding: 30px 0 !important;
-  }
-
-
-  #right-clmn .mtrj {
-    font-size: 200%;
-    width: 600px !important;
-    line-height: 30px !important;
-  }
-
-  .mtrj h3 {
-    padding-top: 10px !important;
-  }
-
-  .offset {
-    font-size: 250%;
-    padding: 0 !important;
-    margin: 0 !important;
-    line-height: 60px !important;
-
-  }
-
-  .offset .fl {
-    padding-left: 30px !important;
-  }
-  .offset .flr {
-    padding-right: 30px !important;
-  }
-
-  .legenda, .rezervace {font-size: 160%;}
-  .legenda {line-height: 30px !important; }
-
-  #left-clmn h2 {font-size: 500% !important;}
-
-    #left-clmn > div > p:has(+ table.legenda) { font-size: 200%; line-height: 40px; }
-
-
-}
-
-/* -------------------- Phones: two-column header (logo | contact), nav below -------------------- */
-@media (max-width: 980px) {
-  #head {
     display: grid;
     grid-template-areas:
       "logo contact"
@@ -142,22 +31,40 @@
     aspect-ratio: 3.5 / 1; 
   }
 
+  .cl { 
+    display: none; 
+  }
+
   #head > .matrj {
     display: contents;
     height: auto !important;
     min-height: 0 !important;
   }
 
-  #head h1 { grid-area: logo; margin: 0; align-self: start; }
+  #head h1 { 
+    grid-area: logo; 
+    margin: 0; 
+    align-self: start; }
+
   #nav     { 
     grid-area: nav;  
     width: 100% !important; 
     display: none ;
   }
 
-  /* #contact formatted as vertical list */
-  #contact {
-    grid-area: contact;
+  .matrj {
+    max-width: 980px;
+    width: min(100%, 980px) !important;
+    margin: 0 auto !important;
+    padding: 10px 0 !important;
+  }
+
+  .matrj h1 strong { 
+    display: none; 
+  }
+
+    #contact {
+    /* grid-area: contact;
     position: static !important;
     justify-self: end;
     align-self: center;
@@ -169,43 +76,41 @@
     white-space: normal !important;
     word-break: break-word;
     overflow-wrap: anywhere;
-    margin: 0;
+    margin: 0; */
     display: none !important;
   }
-
-  /* Convert to list-like layout */
-  #contact br { display: block !important; }
-  #contact strong { display: none !important; } /* hide multiline hours block */
-
-  /* Add spacing between items */
-  #contact span,
-  #contact a,
-  #contact p {
-    display: block;
-    text-align: right;
-    margin-bottom: 2px;
-  }
-
-  /* Optional visual tweaks */
-  #contact a { text-decoration: none; }
-  #contact a:hover { text-decoration: underline; }
-
-  /* Page content stack */
-  #cont {
-    display: grid;
-    grid-template-areas:
-      "crumbs"
-      "left"
-      "right";
-    grid-template-columns: 1fr;
-    row-gap: 16px;
-  }
-  #cont > .matrj { display: contents; }
 
   #crumbs     { 
     grid-area: crumbs;
     display: none !important; 
   }
+
+  /* #nav li:has(> a.active) { margin-top: 0 !important; }
+  #nav li > a.active { transform: none !important; }
+
+  #nav ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #nav li { float: none !important; margin: 0 !important; }
+
+  #nav a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 4px;
+    padding: 5px 14px !important;
+    position: static !important;
+    background: white !important;
+    line-height: normal !important;
+  }
+
+  #nav a span { display: none !important; } */
+
   #left-clmn  { 
     grid-area: left;  
     float: none !important; 
@@ -222,15 +127,12 @@
 
   }
 
-  
-    
   #right-clmn { 
     grid-area: right; 
     float: none !important; 
     width: auto !important;
     margin-top: 16px !important; 
     padding: 2px 12px !important;
-
   }
 
   #homepage .clmn1, #homepage .clmn2, #homepage .clmn3,
@@ -253,104 +155,77 @@
   
   }
 
-
-
   #foot p { float: none !important; text-align: center;}
 
-}
-
-/* -------------------- Small phones -------------------- */
-@media (max-width: 768px) {
-  #head { grid-template-columns: 1fr minmax(48%, 1fr); }
-  #nav a { padding: 8px 10px; }
-}
-
-/* -------------------- Very small phones -------------------- */
-@media (max-width: 480px) {
-  #head { grid-template-columns: 1fr minmax(52%, 1fr); }
-  #contact { font-size: 12px; }
-  .rezervace th, .rezervace td { font-size: 12px; }
-}
-
-/* Phone layout: fixed-size tiles with horizontal scroll */
-@media (max-width: 980px) {
-
-  /* 1) Let the CONTAINER scroll horizontally, keep table as a table */
-  #left-clmn {
-
-    overflow: scroll;
-  }
-
-  /* 2) Use the table layout algorithm (not block) and fix column widths */
   table.rezervace {
-    display: table !important;       /* override any display:block earlier */
-    table-layout: fixed !important;  /* browser obeys explicit column widths */
-    width: max-content !important;   /* table can be wider than viewport */
-    border-collapse: collapse;       /* optional; use 'separate' if you prefer gaps */
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border: 0 !important;
+    border-collapse: separate !important;
+    background: transparent !important;
   }
 
-  /* 3) Make every column a 200px tile */
   table.rezervace th,
-  table.rezervace td {
-    width: 130px !important;         /* fixed tile width */
-    min-width: 130px !important;
-    max-width: 130px !important;
-    padding: 12px 10px !important;   /* roomy tiles */
-    white-space: normal;             /* allow wrapping INSIDE the tile */
-    overflow-wrap: anywhere;         /* break long words/URLs */
+  table.rezervace td { white-space: nowrap; }
+
+  #foot p { font-size: 100%; }
+  #foot p.fl { font-size: 200%; margin-bottom: 20px !important; }
+
+  #foot .matrj { padding: 30px 0 !important; }
+
+  #right-clmn .mtrj {
+    font-size: 200%;
+    width: 600px !important;
+    line-height: 30px !important;
   }
 
-  /* #left-clmn h2{
-    width: 100vw !important;
+  .mtrj h3 { padding-top: 10px !important; }
 
+  .offset {
+    font-size: 250%;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 60px !important;
   }
 
-  table.legenda {
-    width: 100vw !important;
-  } */
+  .offset .fl { padding-left: 30px !important; }
+  .offset .flr { padding-right: 30px !important; }
 
-  /* 4) If the first column (dates) should be narrower or wider, tweak it: */
-  /* table.rezervace th:first-child,
-     table.rezervace td:first-child { width: 140px !important; min-width: 140px !important; } */
+  .legenda,
+  .rezervace { font-size: 160%; }
 
-  table.rezervace { width: 100% !important; }  
-  table.rezervace { overflow-x: scroll !important; }
-}
+  .legenda { line-height: 30px !important; }
 
-@media (max-width: 980px) {
-  /* The column must NOT scroll */
-  #left-clmn {
+  #left-clmn h2 { font-size: 500% !important; }
+
+  #left-clmn > div > p:has(+ table.legenda) {
+    font-size: 200%;
+    line-height: 40px;
+  }
+
+  /* Overflow Rezervace table settings */
+    #left-clmn {
     overflow-x: visible !important;
     display: block !important;
-    /* align-self: center !important; */
     justify-content: center;
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
 
-  /* The table itself handles horizontal scroll */
   table.rezervace {
-    display: block !important;          /* so overflow applies to this element */
-    overflow-x: auto !important;        /* scrollbar on the table, not the column */
+    display: block !important;
+    overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
-
-    width: 100% !important;             /* the element fits the viewport */
+    width: 100% !important;
     max-width: 100% !important;
-
-    /* Force content wider than the element to trigger scroll:
-       Change 8 to your real number of columns */
-    /* min-width: calc(1px * 8) !important; */
-
-    table-layout: fixed !important;     /* obey fixed cell widths */
+    table-layout: fixed !important;
     border-collapse: collapse;
-    margin: 0 auto;                     /* sits centered visually */
-
-    border-collapse: collapse;
-  border-spacing: 0;
-  background-color: white;
+    border-spacing: 0;
+    background-color: white;
+    margin: 0 auto;
   }
 
-  /* Fixed 130px tiles */
   table.rezervace th,
   table.rezervace td {
     width: 128px !important;
@@ -362,4 +237,24 @@
     overflow-wrap: anywhere;
     text-align: center;
   }
+
+  table.rezervace { width: 100% !important; }  
+  table.rezervace { overflow-x: scroll !important; }
+}
+
+/* -------------------------- */
+/* Small phones              */
+/* -------------------------*/
+@media (max-width: 768px) {
+  #head { grid-template-columns: 1fr minmax(48%, 1fr); }
+  #nav a { padding: 8px 10px; }
+}
+
+/* -------------------------- */
+/* Very small phones         */
+/* -------------------------*/
+@media (max-width: 480px) {
+  #head { grid-template-columns: 1fr minmax(52%, 1fr); }
+  #contact { font-size: 12px; }
+  .rezervace th, .rezervace td { font-size: 12px; }
 }
