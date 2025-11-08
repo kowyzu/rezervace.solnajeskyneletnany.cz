@@ -78,25 +78,46 @@
   table.rezervace th,
   table.rezervace td { white-space: nowrap; }
 
-    #foot p {font-size: 70%;}
-  #foot p.fl {font-size: 200%;}
+    #foot p {font-size: 100%;}
+  #foot p.fl {font-size: 200%; margin-bottom: 20px !important;}
   #foot .matrj {
     padding: 30px 0 !important;
   }
 
 
-  .mtrj {
-    font-size: 130%;
-    width: 300px !important;
+  #right-clmn .mtrj {
+    font-size: 200%;
+    width: 600px !important;
+    line-height: 30px !important;
   }
 
   .mtrj h3 {
     padding-top: 10px !important;
   }
 
-  .offset {font-size: 200%;}
-  .legenda, .rezervace {font-size: 150%;}
-  #left-clmn > div > p:has(+ table.legenda) { font-size: 90%; }
+  .offset {
+    font-size: 250%;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 60px !important;
+
+  }
+
+  .offset .fl {
+    padding-left: 30px !important;
+  }
+  .offset .flr {
+    padding-right: 30px !important;
+  }
+
+  .legenda, .rezervace {font-size: 160%;}
+  .legenda {line-height: 30px !important; }
+
+  #left-clmn h2 {font-size: 500% !important;}
+
+    #left-clmn > div > p:has(+ table.legenda) { font-size: 200%; line-height: 40px; }
+
+
 }
 
 /* -------------------- Phones: two-column header (logo | contact), nav below -------------------- */
@@ -236,65 +257,12 @@
 
   #foot p { float: none !important; text-align: center;}
 
-  body { font-size: 80%; }
-  h1   { font-size: 140% !important; }
-  h2   { 
-    font-size: 120% !important; 
-    margin-top: 0 !important;
-  }
-
-  #foot p {font-size: 70%;}
-  #foot p.fl {font-size: 200%;}
-  #foot .matrj {
-    padding: 30px 0 !important;
-  }
-
-
-  .mtrj {
-    font-size: 130%;
-    width: 300px !important;
-  }
-
-  .mtrj h3 {
-    padding-top: 10px !important;
-  }
-
-  .offset {font-size: 200%;}
-  .legenda, .rezervace {font-size: 150%;}
-  #left-clmn > div > p:has(+ table.legenda) { font-size: 90%; }
 }
 
 /* -------------------- Small phones -------------------- */
 @media (max-width: 768px) {
   #head { grid-template-columns: 1fr minmax(48%, 1fr); }
   #nav a { padding: 8px 10px; }
-
-    body { font-size: 80%; }
-  h1   { font-size: 140% !important; }
-  h2   { 
-    font-size: 120% !important; 
-    margin-top: 0 !important;
-  }
-
-  #foot p {font-size: 70%;}
-  #foot p.fl {font-size: 200%;}
-  #foot .matrj {
-    padding: 30px 0 !important;
-  }
-
-
-  .mtrj {
-    font-size: 130%;
-    width: 300px !important;
-  }
-
-  .mtrj h3 {
-    padding-top: 10px !important;
-  }
-
-  .offset {font-size: 200%;}
-  .legenda, .rezervace {font-size: 150%;}
-  #left-clmn > div > p:has(+ table.legenda) { font-size: 90%; }
 }
 
 /* -------------------- Very small phones -------------------- */
@@ -302,34 +270,6 @@
   #head { grid-template-columns: 1fr minmax(52%, 1fr); }
   #contact { font-size: 12px; }
   .rezervace th, .rezervace td { font-size: 12px; }
-
-
-    /* body { font-size: 80%; } */
-  h1   { font-size: 140% !important; }
-  h2   { 
-    font-size: 120% !important; 
-    margin-top: 0 !important;
-  }
-
-  #foot p {font-size: 70%;}
-  #foot p.fl {font-size: 200%;}
-  #foot .matrj {
-    padding: 30px 0 !important;
-  }
-
-
-  .mtrj {
-    font-size: 130%;
-    width: 300px !important;
-  }
-
-  .mtrj h3 {
-    padding-top: 10px !important;
-  }
-
-  .offset {font-size: 200%;}
-  .legenda, .rezervace {font-size: 150%;}
-  #left-clmn > div > p:has(+ table.legenda) { font-size: 200%; }
 }
 
 /* Phone layout: fixed-size tiles with horizontal scroll */
@@ -384,6 +324,8 @@
     display: block !important;
     /* align-self: center !important; */
     justify-content: center;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   /* The table itself handles horizontal scroll */
