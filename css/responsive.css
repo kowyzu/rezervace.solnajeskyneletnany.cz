@@ -32,7 +32,7 @@
     max-width: 980px;
     width: min(100%, 980px) !important;
     margin: 0 auto !important;
-    padding: 10px auto !important;
+    padding: 10px 0 !important;
   }
 
   .matrj h1 strong {
@@ -202,12 +202,7 @@
   
   }
 
-  .rezervace th, .rezervace td { 
-    font-size: 13px; 
-    padding: 10px !important; 
-    width: 200px !important;
-    height: auto !important;
-  }
+
 
   #foot p { float: none !important; text-align: center; }
 
@@ -232,3 +227,85 @@
   .rezervace th, .rezervace td { font-size: 12px; }
 }
 
+/* Phone layout: fixed-size tiles with horizontal scroll */
+@media (max-width: 980px) {
+
+  /* 1) Let the CONTAINER scroll horizontally, keep table as a table */
+  #left-clmn {
+    overflow-x: scroll;
+    overflow: scroll;
+  }
+
+  /* 2) Use the table layout algorithm (not block) and fix column widths */
+  table.rezervace {
+    display: table !important;       /* override any display:block earlier */
+    table-layout: fixed !important;  /* browser obeys explicit column widths */
+    width: max-content !important;   /* table can be wider than viewport */
+    border-collapse: collapse;       /* optional; use 'separate' if you prefer gaps */
+  }
+
+  /* 3) Make every column a 200px tile */
+  table.rezervace th,
+  table.rezervace td {
+    width: 130px !important;         /* fixed tile width */
+    min-width: 130px !important;
+    max-width: 130px !important;
+    padding: 12px 10px !important;   /* roomy tiles */
+    white-space: normal;             /* allow wrapping INSIDE the tile */
+    overflow-wrap: anywhere;         /* break long words/URLs */
+  }
+
+  /* #left-clmn h2{
+    width: 100vw !important;
+
+  }
+
+  table.legenda {
+    width: 100vw !important;
+  } */
+
+  /* 4) If the first column (dates) should be narrower or wider, tweak it: */
+  /* table.rezervace th:first-child,
+     table.rezervace td:first-child { width: 140px !important; min-width: 140px !important; } */
+
+  table.rezervace { width: 100% !important; }  
+  table.rezervace { overflow-x: scroll !important; }
+}
+
+@media (max-width: 980px) {
+  /* The column must NOT scroll */
+  #left-clmn {
+    overflow-x: visible !important;     /* stop column-wide scrolling */
+    display: block !important;
+  }
+
+  /* The table itself handles horizontal scroll */
+  table.rezervace {
+    display: block !important;          /* so overflow applies to this element */
+    overflow-x: auto !important;        /* scrollbar on the table, not the column */
+    -webkit-overflow-scrolling: touch;
+
+    width: 100% !important;             /* the element fits the viewport */
+    max-width: 100% !important;
+
+    /* Force content wider than the element to trigger scroll:
+       Change 8 to your real number of columns */
+    min-width: calc(130px * 8) !important;
+
+    table-layout: fixed !important;     /* obey fixed cell widths */
+    border-collapse: collapse;
+    margin: 0 auto;                     /* sits centered visually */
+  }
+
+  /* Fixed 130px tiles */
+  table.rezervace th,
+  table.rezervace td {
+    width: 128px !important;
+    min-width: 128px !important;
+    max-width: 128px !important;
+    padding: 10px !important;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+}
