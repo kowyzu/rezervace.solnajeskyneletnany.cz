@@ -77,6 +77,26 @@
   }
   table.rezervace th,
   table.rezervace td { white-space: nowrap; }
+
+    #foot p {font-size: 70%;}
+  #foot p.fl {font-size: 200%;}
+  #foot .matrj {
+    padding: 30px 0 !important;
+  }
+
+
+  .mtrj {
+    font-size: 130%;
+    width: 300px !important;
+  }
+
+  .mtrj h3 {
+    padding-top: 10px !important;
+  }
+
+  .offset {font-size: 200%;}
+  .legenda, .rezervace {font-size: 150%;}
+  #left-clmn > div > p:has(+ table.legenda) { font-size: 90%; }
 }
 
 /* -------------------- Phones: two-column header (logo | contact), nav below -------------------- */
@@ -223,15 +243,15 @@
     margin-top: 0 !important;
   }
 
-  /* #foot p {font-size: 70%;} */
-  /* #foot p.fl {font-size: 200%;} */
+  #foot p {font-size: 70%;}
+  #foot p.fl {font-size: 200%;}
   #foot .matrj {
     padding: 30px 0 !important;
   }
 
 
   .mtrj {
-    /* font-size: 130%; */
+    font-size: 130%;
     width: 300px !important;
   }
 
@@ -239,9 +259,9 @@
     padding-top: 10px !important;
   }
 
-  /* .offset {font-size: 200%;}
+  .offset {font-size: 200%;}
   .legenda, .rezervace {font-size: 150%;}
-  #left-clmn > div > p:has(+ table.legenda) { font-size: 90%; } */
+  #left-clmn > div > p:has(+ table.legenda) { font-size: 90%; }
 }
 
 /* -------------------- Small phones -------------------- */
