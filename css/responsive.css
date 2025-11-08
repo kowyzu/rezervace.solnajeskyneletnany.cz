@@ -425,4 +425,13 @@ table.l + p::before {
   line-height: 1.4;
 }
 
+input[type="submit"] {
+  font-size: var(--font-base) !important;
+  border-radius: 20px !important;
+  background: linear-gradient(135deg, #40438E 0%, #9069A2 100%) !important;
+  color: white !important;
+  border: none !important;
+  /* transition: all 0.3s ease-in-out !important; */
+}
+
 }
