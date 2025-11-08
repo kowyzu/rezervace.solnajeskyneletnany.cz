@@ -171,7 +171,7 @@
   table.rezervace th,
   table.rezervace td { white-space: nowrap; }
 
-  #foot p { font-size: 1rem !important; }
+  #foot p { font-size: 2rem !important; }
   /* #foot p .fl { font-size: 1rem !important; margin-bottom: 20px !important; } */
 
   #foot .matrj { padding: 30px 0 !important; }
@@ -195,10 +195,6 @@
     line-height: 60px !important;
   }
 
-  .offset a {
-    font-size: 1rem !important;
-  }
-
   .offset .fl { padding-left: 30px !important; }
   .offset .flr { padding-right: 30px !important; }
 
@@ -210,7 +206,7 @@
   #left-clmn h2 { font-size: 3rem !important; }
 
   #left-clmn > div > p:has(+ table.legenda) {
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 40px;
   }
 
