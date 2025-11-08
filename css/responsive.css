@@ -215,7 +215,9 @@
     line-height: 40px;
   }
 
+  /* ---------------------------------- */
   /* Overflow Rezervace table settings */
+  /* -------------------------------- */
     #left-clmn {
     overflow-x: visible !important;
     display: block !important;
@@ -266,6 +268,59 @@ table.rezervace::-webkit-scrollbar-track {
 
   table.rezervace { width: 100% !important; }  
   table.rezervace { overflow-x: scroll !important; }
+
+  /* ---------------------------------- */
+  /* Detail table settings             */
+  /* -------------------------------- */
+table.l {
+  width: 100% !important;
+  border: none;
+  font-size: 2rem !important;
+}
+
+.sml {
+  font-size: 100% !important;
+  font-size: 1.5rem !important;
+}
+
+table.l th,
+table.l td {
+  min-height: 100px !important;
+  vertical-align: middle !important;
+  border: none;
+  background: none;
+}
+
+table.l th.c {
+  width: 45% !important;
+  /* vertical-align: top !important; */
+  text-align: left !important;
+  padding: 10px 14px !important;
+}
+
+table.l td {
+  width: auto !important;
+  padding: 10px 14px !important;
+  display: grid !important;
+  grid-template-columns: minmax(240px, 1fr) auto !important;
+  column-gap: 8px !important;
+  align-items: center !important;
+}
+
+table.l input,
+table.l select {
+  grid-column: 1 / 2 !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  min-height: 100px !important;
+  /* height: 44px !important; */
+  box-sizing: border-box !important;
+  /* font-size: 16px !important; */
+  padding: 8px 10px !important;
+  border-width: 2px !important;
+  border-radius: 20px !important;
+
+}
 }
 
 /* -------------------------- */
