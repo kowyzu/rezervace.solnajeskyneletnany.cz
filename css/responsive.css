@@ -294,9 +294,6 @@ table.rezervace::-webkit-scrollbar-track {
   table.rezervace { width: 100% !important; }  
   table.rezervace { overflow-x: scroll !important; }
 
-  /* ---------------------------------- */
-  /* Detail table settings             */
-  /* -------------------------------- */
 /* ---------------------------------- */
 /* Detail table settings              */
 /* ---------------------------------- */
@@ -395,6 +392,11 @@ table.l th.c {
   padding: 10px 14px !important;
 }
 
+/* Bigger font inside <select> dropdown options */
+table.l select option {
+  font-size: var(--font-base) !important;
+  line-height: 1.6 !important;
+}
 
 
 }
