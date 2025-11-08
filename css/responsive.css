@@ -181,7 +181,7 @@
   }
 
   #right-clmn .mtrj {
-    font-size: 1rem !important;
+    font-size: 2rem !important;
     width: 100% !important;
     line-height: 30px !important;
   }
@@ -198,10 +198,10 @@
   .offset .fl { padding-left: 30px !important; }
   .offset .flr { padding-right: 30px !important; }
 
-  .legenda,
-  .rezervace { font-size: 1.2rem; }
-
+  .legenda { font-size: 1.2rem; }
   .legenda { line-height: 30px !important; }
+
+  .rezervace { font-size: 2rem !important;}
 
   #left-clmn h2 { font-size: 3rem !important; }
 
