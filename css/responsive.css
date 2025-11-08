@@ -192,11 +192,11 @@
     font-size: 2rem !important;
     padding: 0 !important;
     margin: 0 !important;
-    line-height: 60px !important;
+    line-height: 7rem !important;
   }
 
-  .offset .fl { padding-left: 30px !important; }
-  .offset .flr { padding-right: 30px !important; }
+  .offset .fl { padding-left: 3rem !important; }
+  .offset .flr { padding-right: 3rem !important; }
 
   .legenda { font-size: 1.2rem; }
   .legenda { line-height: 30px !important; }
