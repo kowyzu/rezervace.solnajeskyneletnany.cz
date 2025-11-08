@@ -3,7 +3,7 @@
 /* -------------------------*/
 @media (max-width: 1000px) {
   body, html {
-    font: 16px Arial, Verdana, lucida, sans-serif !important;
+    font: 100% Arial, Verdana, lucida, sans-serif !important;
   }
   body,
   #body,
@@ -171,8 +171,10 @@
   table.rezervace th,
   table.rezervace td { white-space: nowrap; }
 
-  #foot p { font-size: 2rem !important; }
-  /* #foot p .fl { font-size: 1rem !important; margin-bottom: 20px !important; } */
+  #foot p {     font-size: 0.8rem !important;}
+  #foot .fl { font-size: 2rem !important; 
+    margin-bottom: 20px !important; 
+  }
 
   #foot .matrj { padding: 30px 0 !important; }
 
@@ -181,7 +183,7 @@
   }
 
   #right-clmn .mtrj {
-    font-size: 2rem !important;
+    font-size: 0.8rem !important;
     width: 100% !important;
     padding: 0 !important;
     line-height: 30px !important;
@@ -203,15 +205,18 @@
   .offset .fl { padding-left: 3rem !important; }
   .offset .flr { padding-right: 3rem !important; }
 
-  .legenda { font-size: 1.5rem; }
-  .legenda { line-height: 30px !important; }
+  .legenda { 
+    line-height: 30px !important; 
+    font-size: 1.5rem; 
+    margin-top: 3.5rem !important;
+  }
 
   .rezervace { font-size: 2rem !important;}
 
   #left-clmn h2 { font-size: 3rem !important; }
 
   #left-clmn > div > p:has(+ table.legenda) {
-    font-size: 2rem;
+    font-size: 0.8rem !important;
     line-height: 40px;
   }
 
@@ -272,6 +277,9 @@ table.rezervace::-webkit-scrollbar-track {
   /* ---------------------------------- */
   /* Detail table settings             */
   /* -------------------------------- */
+/* ---------------------------------- */
+/* Detail table settings              */
+/* ---------------------------------- */
 table.l {
   width: 100% !important;
   border: none;
@@ -279,7 +287,6 @@ table.l {
 }
 
 .sml {
-  font-size: 100% !important;
   font-size: 1.5rem !important;
 }
 
@@ -293,7 +300,6 @@ table.l td {
 
 table.l th.c {
   width: 45% !important;
-  /* vertical-align: top !important; */
   text-align: left !important;
   padding: 10px 14px !important;
 }
@@ -305,6 +311,9 @@ table.l td {
   grid-template-columns: minmax(240px, 1fr) auto !important;
   column-gap: 8px !important;
   align-items: center !important;
+  position: relative !important;
+  font-size: 0 !important;              /* hides literal '*' text node */
+  padding-right: 1.2em !important;      /* reserve space for synthetic star */
 }
 
 table.l input,
@@ -313,14 +322,31 @@ table.l select {
   width: 100% !important;
   max-width: 520px !important;
   min-height: 100px !important;
-  /* height: 44px !important; */
   box-sizing: border-box !important;
-  /* font-size: 16px !important; */
   padding: 8px 10px !important;
   border-width: 2px !important;
   border-radius: 20px !important;
-
+  font-size: 16px !important;
 }
+
+/* Default: no star */
+table.l td::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #c00;
+}
+
+/* Show star only for required inputs */
+table.l td:has(#osob)::after,
+table.l td:has(#jmeno)::after,
+table.l td:has(#telefon)::after {
+  content: "*";
+}
+
 }
 
 /* -------------------------- */
