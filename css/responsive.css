@@ -4,7 +4,7 @@
 */
 
 /* -------------------- Tablet / small laptop -------------------- */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   /* delete image bg-body-head.jpg line bellow the #head  */
 
   body,
@@ -16,9 +16,12 @@
 
   #head {
     padding: 0 !important;
-  padding: 0 !important;
-  background: url(../img/2008-09-22/logo.jpg) no-repeat center center !important;
-  background-size: cover !important;
+    /* background: url(../img/2008-09-22/logo.jpg) no-repeat left top !important; */
+    background-size: contain !important;   
+    background-color: #001b5f;            
+    /* height: auto !important; */
+    /* min-height: 0 !important; */
+    aspect-ratio: 3 / 2;     
   }
 
   .cl {
@@ -60,6 +63,10 @@
     line-height: normal !important;
   }
 
+  #nav a span {
+    display: none !important;
+  }
+
   table.rezervace {
     display: block;
     width: 100%;
@@ -86,10 +93,12 @@
     /* margin-bottom: 12px; */
     height: auto !important;
     min-height: 0 !important;
-    padding-bottom: 8px;
-        /* background-size: contain !important;   */
-    background-position: center center !important;
-    background-color: #001b5f;  
+    background: url(../img/2008-09-22/logo.jpg) no-repeat left top !important;
+    background-size: contain !important;
+    background-color: #001b5f;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 3.5 / 1; 
   }
 
   #head > .matrj {
@@ -99,7 +108,11 @@
   }
 
   #head h1 { grid-area: logo; margin: 0; align-self: start; }
-  #nav     { grid-area: nav;  width: 100% !important; }
+  #nav     { 
+    grid-area: nav;  
+    width: 100% !important; 
+    display: none ;
+  }
 
   /* #contact formatted as vertical list */
   #contact {
@@ -116,6 +129,7 @@
     word-break: break-word;
     overflow-wrap: anywhere;
     margin: 0;
+    display: none !important;
   }
 
   /* Convert to list-like layout */
@@ -147,7 +161,10 @@
   }
   #cont > .matrj { display: contents; }
 
-  #crumbs     { grid-area: crumbs; }
+  #crumbs     { 
+    grid-area: crumbs;
+    display: none !important; 
+  }
   #left-clmn  { grid-area: left;  float: none !important; width: auto !important; }
   #right-clmn { grid-area: right; float: none !important; width: auto !important;
                 padding-top: 16px !important; }
