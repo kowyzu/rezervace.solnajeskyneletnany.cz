@@ -329,7 +329,7 @@
 
   .offset {font-size: 200%;}
   .legenda, .rezervace {font-size: 150%;}
-  #left-clmn > div > p:has(+ table.legenda) { font-size: 90%; }
+  #left-clmn > div > p:has(+ table.legenda) { font-size: 200%; }
 }
 
 /* Phone layout: fixed-size tiles with horizontal scroll */
