@@ -94,7 +94,14 @@ html {
 
   #crumbs     { 
     grid-area: crumbs;
-    display: none !important; 
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    font-size: var(--font-small) !important;
+  }
+
+  #crumbs .matrj {
+    text-align: center !important;
+    background: none;
   }
 
   #left-clmn  { 
@@ -371,6 +378,8 @@ html {
     background: #fff;        /* match your page background */
     text-align: start;
     padding-left: 14px !important;
+    padding-right: 14px !important;
+
     font-size: var(--font-base);
   }
 
