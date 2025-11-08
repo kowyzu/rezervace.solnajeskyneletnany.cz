@@ -347,6 +347,10 @@
     table-layout: fixed !important;     /* obey fixed cell widths */
     border-collapse: collapse;
     margin: 0 auto;                     /* sits centered visually */
+
+    border-collapse: collapse;
+  border-spacing: 0;
+  background-color: white;
   }
 
   /* Fixed 130px tiles */
@@ -355,6 +359,7 @@
     width: 128px !important;
     min-width: 128px !important;
     max-width: 128px !important;
+    height: 52px !important;
     padding: 10px !important;
     white-space: normal;
     overflow-wrap: anywhere;
