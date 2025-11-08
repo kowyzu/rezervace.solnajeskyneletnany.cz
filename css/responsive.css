@@ -400,5 +400,29 @@ table.l select option {
   line-height: 1.6 !important;
 }
 
+/* table.l + * {
+  font-size: var(--font-base) !important;
+} */
+ 
+
+table.l + p {
+  position: relative;
+  margin-top: -1em;      /* pull up to overlap the raw text line */
+  padding-top: 1.4em;      /* keep spacing consistent */
+  background: #fff;        /* match your page background */
+  text-align: start;
+  padding-left: 14px !important;
+  font-size: var(--font-base);
+}
+
+/* Inject a styled replacement of the star notice above that paragraph */
+table.l + p::before {
+  content: "* Položky označené hvězdičkou jsou povinné.";
+  display: block;
+  margin-bottom: 0.5em;
+  text-align: start;       /* or left; your preference */
+  font-size: var(--font-base);
+  line-height: 1.4;
+}
 
 }
