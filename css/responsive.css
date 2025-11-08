@@ -10,6 +10,7 @@ html {
   :root {
     --font-base: 1.6rem;
     --font-medium: 1.3rem;
+    --font-small: 1.1rem;
   }
 
   /* 2) Set a comfortable root so rems aren’t tiny after phone downscales */
@@ -48,9 +49,7 @@ html {
     background: url(../img/2008-09-22/logo.jpg) no-repeat left top !important;
     background-size: contain !important;
     background-color: #001b5f;
-    height: auto !important;
-    min-height: 0 !important;
-    aspect-ratio: 3.5 / 1; 
+    aspect-ratio: 3.5 / 1;
   }
 
   .cl { 
@@ -308,7 +307,7 @@ table.l {
 }
 
 .sml {
-  font-size: var(--font-base) !important;
+  font-size: var(--font-small) !important;
 }
 
 table.l th,
@@ -324,22 +323,20 @@ table.l th.c {
   text-align: left !important;
   padding: 10px 14px !important;
 }
+/* Equal input widths and label asterisks in table.l */
 
+/* Hide the literal * next to inputs, but keep controls readable */
 table.l td {
-  width: auto !important;
+  position: relative !important;
+  font-size: 0 !important;
   padding: 10px 14px !important;
   display: grid !important;
-  grid-template-columns: minmax(240px, 1fr) auto !important;
-  column-gap: 8px !important;
+  grid-template-columns: 1fr !important;
   align-items: center !important;
-  position: relative !important;
-  font-size: var(--font-base) !important;              /* hides literal '*' text node */
-  padding-right: 1.2em !important;      /* reserve space for synthetic star */
 }
 
 table.l input,
 table.l select {
-  grid-column: 1 / 2 !important;
   width: 100% !important;
   max-width: 520px !important;
   min-height: 100px !important;
@@ -350,22 +347,54 @@ table.l select {
   font-size: var(--font-base) !important;
 }
 
-/* Default: no star */
-table.l td::after {
-  content: "";
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: var(--font-base);
-  color: #c00;
+/* Make label in the TH the anchor for the asterisk */
+table.l th.c label {
+  position: relative !important;
+  display: inline-block !important;
+  padding-right: 1.2em !important;
+  /* font-size: inherit !important; */
 }
 
-/* Show star only for required inputs */
-table.l td:has(#osob)::after,
-table.l td:has(#jmeno)::after,
-table.l td:has(#telefon)::after {
+/* Default: no star after labels */
+table.l th.c label::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #c00;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* Show star for required fields by matching the label's for= attribute */
+table.l th.c label[for="osob"]::after,
+table.l th.c label[for="jmeno"]::after,
+table.l th.c label[for="telefon"]::after {
   content: "*";
 }
+
+/* Restore font-size for any text inside TDs that must remain visible */
+table.l td > * {
+  font-size: var(--font-base) !important;
+}
+
+/* Row height and alignment */
+table.l th,
+table.l td {
+  min-height: 100px !important;
+  vertical-align: middle !important;
+  border: none;
+  background: none;
+}
+
+/* Column width for the header cells */
+table.l th.c {
+  width: 45% !important;
+  text-align: left !important;
+  padding: 10px 14px !important;
+}
+
+
 
 }
