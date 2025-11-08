@@ -165,7 +165,24 @@
     grid-area: crumbs;
     display: none !important; 
   }
-  #left-clmn  { grid-area: left;  float: none !important; width: auto !important; }
+  #left-clmn  { 
+    grid-area: left;  
+    float: none !important; 
+
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 12px !important;   /* small horizontal padding so text doesn’t touch edges */
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;          /* centers inner elements like images/tables */
+    text-align: center;           
+
+  }
+
+  
+    
   #right-clmn { grid-area: right; float: none !important; width: auto !important;
                 padding-top: 16px !important; }
 
@@ -173,14 +190,33 @@
   #blue-box .clmn1, #blue-box .clmn2, #blue-box .clmn3,
   #right-clmn { background: none !important; }
 
-  .rezervace { overflow-x: auto; border: 0 !important; background: transparent !important; }
-  .rezervace th, .rezervace td { font-size: 13px; padding: 6px; }
+  .legenda {
+    margin: 10px 0 !important;
+  }
+
+  .rezervace { 
+    overflow-x: scroll; 
+    border: 0 !important; 
+    background: transparent !important; 
+    /* width: 100vw !important; */
+  
+  }
+
+  .rezervace th, .rezervace td { 
+    font-size: 13px; 
+    padding: 10px !important; 
+    width: 200px !important;
+    height: auto !important;
+  }
 
   #foot p { float: none !important; text-align: center; }
 
   body { font-size: 90%; }
   h1   { font-size: 140% !important; }
-  h2   { font-size: 120% !important; }
+  h2   { 
+    font-size: 120% !important; 
+    margin-top: 0 !important;
+  }
 }
 
 /* -------------------- Small phones -------------------- */
