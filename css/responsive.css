@@ -183,7 +183,12 @@
   #right-clmn .mtrj {
     font-size: 2rem !important;
     width: 100% !important;
+    padding: 0 !important;
     line-height: 30px !important;
+  }
+
+  #right-clmn .mtrj div {
+    padding: 18px !important;
   }
 
   .mtrj h3 { padding-top: 10px !important; }
