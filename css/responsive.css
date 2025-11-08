@@ -11,10 +11,14 @@
   #body,
   #body-head {
     background-image: none !important;
+    background: white !important;
   }
 
   #head {
     padding: 0 !important;
+  padding: 0 !important;
+  background: url(../img/2008-09-22/logo.jpg) no-repeat center center !important;
+  background-size: cover !important;
   }
 
   .cl {
@@ -25,10 +29,17 @@
     max-width: 980px;
     width: min(100%, 980px) !important;
     margin: 0 auto !important;
-    padding: 0 !important;
+    padding: 10px auto !important;
+  }
+
+  .matrj h1 strong {
+    display: none;
   }
 
   /* .matrj {padding-top: 60px !important;} */
+
+  #nav li:has(> a.active) { margin-top: 0 !important; }
+  #nav li > a.active      { transform: none !important; }
 
   #nav ul {
     display: flex !important;
@@ -39,7 +50,15 @@
     margin: 0;
   }
   #nav li { float: none !important; margin: 0 !important; }
-  #nav a  { display: block; padding: 10px 14px; border-radius: 4px; }
+  #nav a  { 
+    display: block; 
+    padding: 10px 14px; 
+    border-radius: 4px;
+    padding: 5px 14px !important;
+    position: static !important;
+    background: white !important;
+    line-height: normal !important;
+  }
 
   table.rezervace {
     display: block;
@@ -68,6 +87,9 @@
     height: auto !important;
     min-height: 0 !important;
     padding-bottom: 8px;
+        /* background-size: contain !important;   */
+    background-position: center center !important;
+    background-color: #001b5f;  
   }
 
   #head > .matrj {
