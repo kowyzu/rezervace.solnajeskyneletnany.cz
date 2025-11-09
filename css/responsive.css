@@ -312,6 +312,10 @@ html {
     font-size: var(--font-base) !important;
   }
 
+  table.l select {
+    -webkit-appearance: none !important;
+  }
+
   /* Make label in the TH the anchor for the asterisk */
   table.l th.c label {
     position: relative !important;
