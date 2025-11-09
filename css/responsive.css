@@ -309,7 +309,9 @@ html {
   }
 
   table.l select {
+    appearance: none !important;
     -webkit-appearance: none !important;
+    -moz-appearance: none !important;
   }
 
   /* Make label in the TH the anchor for the asterisk */
